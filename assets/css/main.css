@@ -1,0 +1,189 @@
+/* 
+#F5CF3C
+#5F9CA2
+font-family: 'Open Sans', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #5F9CA2;
+    opacity: 0.75;
+    border: none;
+}
+
+hr.divider-color {
+    width: 100%;
+    height: 1px;
+    background-color: #F5CF3C;
+    opacity: 0.75;
+    border: none;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    position: relative;
+}
+
+.section-title {
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+/* ----- Hero ----- */
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../images/Fotolia_125966311_Subscription_Monthly_XXL.png');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+}
+
+.header-logo {
+    width: 100%;
+    height: auto;
+}
+
+.hero-arrow-down {
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-arrow-down .arrow-down {
+    display: block;
+    margin: -10px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #F5CF3C;
+    border-right: 1px solid #F5CF3C;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+}
+
+.hero-arrow-down .arrow-down:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.hero-arrow-down .arrow-down:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+/* ----- Navigation ----- */
+
+#navbar {
+    overflow: hidden;
+    background-color: #5F9CA2;
+    z-index: 1;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: #F5CF3C;
+    color: black;
+}
+
+#navbar a.active {
+    background-color: #F5CF3C;
+    color: white;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+/* ----- About ----- */
+
+#about {
+    padding-top: 120px;
+}
+
+.about-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-text {
+    padding: 50px 5px 50px 5px;
+    text-align: justify;
+}
+
+.about-img {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+/* ----- Step ----- */
+
+#step {
+    padding-top: 120px;
+    background-color: #5F9CA2;
+    color: white;
+}
